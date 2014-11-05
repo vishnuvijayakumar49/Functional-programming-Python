@@ -1,0 +1,19 @@
+print 0,1,
+def fib(n,a=0,b=1):
+	if n==3:
+		return a+b
+	print a+b,fib(n-1,b,b+a)
+	
+fib(6)
+
+
+
+# by recursion
+
+def fib(n):
+	if n<=1:
+		return n
+	else:
+		return (fib(n-1) + fib(n-2))
+	
+print fib(6)

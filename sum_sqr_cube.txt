@@ -1,0 +1,19 @@
+def sum_sqr_cube(a,b):
+	return sqr(cube(a))+sqr(cube(b))
+
+def sqr(x):
+	return x*x
+	
+def cube(x):
+	return x*x*x
+
+print sum_sqr_cube(3,4)
+
+#using lambda
+
+def sum_sqr_cube_lambd(a,b):
+	f=lambda x:x*x*x
+	g=lambda x:x*x
+	return g(f(a))+g(f(b))
+	
+print sum_sqr_cube_lambd(3,4)

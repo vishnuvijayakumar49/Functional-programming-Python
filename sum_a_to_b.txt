@@ -1,0 +1,4 @@
+def sum_a_to_b(a,b):
+	if a==b:
+		return b
+	return a + sum_a_to_b(a+1,b)

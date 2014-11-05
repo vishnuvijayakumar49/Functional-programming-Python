@@ -1,0 +1,10 @@
+def sqr(x):
+    return x*x
+    
+def qube(x):
+    return x*x*x
+    
+def compose(f,g,x):
+    return f(g(x))
+    
+compose(sqr,qube,2)
